@@ -64,6 +64,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.navigation.compose)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,12 +74,21 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx:24.2.0")
+    implementation("androidx.navigation:navigation-compose:2.7.0")
+    implementation("androidx.compose.material:material:1.4.0")
+    implementation("androidx.compose.ui:ui:1.5.0")
+    implementation("androidx.compose.material3:material3:1.0.0")
+    implementation("io.coil-kt:coil-compose:2.4.0") // Pastikan untuk menggunakan versi terbaru
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+
 
     // Firebase BOM for analytics and other Firebase services
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-database-ktx")
     implementation("com.google.firebase:firebase-database-ktx:20.2.2")
-}
 
+}
 
