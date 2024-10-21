@@ -61,7 +61,8 @@ class TugasScreen {
             Button(
                 onClick = {
                     // Add task to the list if title and description are not empty
-                    if (tugasTitle.text.isNotBlank() && tugasDescription.text.isNotBlank()) {
+                    if (tugasTitle.
+                        text.isNotBlank() && tugasDescription.text.isNotBlank()) {
                         daftarTugas = daftarTugas + (tugasTitle.text to tugasDescription.text)
                         // Clear the text fields
                         tugasTitle = TextFieldValue("")
